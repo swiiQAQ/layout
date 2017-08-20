@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            p{
+                text-align: center;
+            }
+            .left,.right,.middle{
+                height: 500px;
+                position: relative;
+            }           
+            .left{
+                float: left;
+                width: 200px;
+                background: #F38181;
+            }
+            .right{
+                float: right;
+                width: 200px;
+                background: #FCE38A;
+            }
+            .middle{
+                overflow: hidden;
+                background: #95E1D3;
+            }
+            .middleInner{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p>BFC布局</p>
+        <p>左右固定宽度，中间自适应</p>
+        <div class="left">
+            <div class="middleInner">
+                <p>float:left</p>
+                <p>width:200px</p>
+                <p>height:500px;</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="middleInner">
+                <p>float:right</p>
+                <p>width:200px</p>
+                <p>height:500px;</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middleInner">
+                <p>overflow:hidden</p>
+                <p>height:500px;</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            p{
+                text-align: center;
+            }
+            .left,.right,.middle{
+                height: 500px;
+            }
+            .left{
+                float: left;
+                width: 200px;
+                background: #F38181;
+            }
+            .right{
+                float: right;
+                width: 200px;
+                background: #FCE38A;
+            }
+            .middle{
+                margin-left: 200px;
+                margin-right: 200px;
+                background: #95E1D3;
+            }
+            .cc{
+                display: table-cell;
+                vertical-align: middle;
+            }
+             .middle-inline{
+                display: inline-block;
+                vertical-align: center;
+                
+            } 
+             .cc_outbox{
+                display: table;
+                width: 100%;
+                height: 100%;
+            } 
+        </style>
+    </head>
+    <body>
+        <p>流体布局</p>
+        <p>左右固定宽度，中间自适应</p>
+        <div class="left">
+            <div class="cc_outbox">
+                <div class="cc">
+                    <p>float: left;</p>
+                    <p>width: 200px;</p>
+                    <p>height: 500px;</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cc_outbox">
+                <div class="cc">
+                    <p>float:right</p>
+                    <p>width:200px</p>
+                    <p>height: 500px;</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="cc_outbox">
+                <div class="cc">
+                    <p>margin-left:200px</p>
+                    <p>margin-right:200px</p>
+                    <p>height: 500px;</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

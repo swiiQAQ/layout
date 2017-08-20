@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            p{
+                text-align: center;
+            }
+            .left,.right,.main{
+                height: 500px;
+                position: relative;
+            }
+            .content {
+                float: left;
+                width: 100%;
+            }
+            .main {
+                margin: 0 200px;
+                background: #95E1D3;
+            }
+            .left {
+                float: left;
+                width: 200px;
+                margin-left: -100%;
+                background: #F38181;
+            }
+            .right {
+                width: 200px;
+                float: right;
+                margin-left: -200px;
+                background: #FCE38A;
+            }
+            .innerBox{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <p>双飞翼布局</p>
+        <div class="content">
+            <div class="main">
+                <div class="innerBox">
+                    <p>float:left</p>
+                    <p>width:100%</p>
+                    <p>>div margin: 0 200px</p>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="innerBox">
+                <p>float:left</p>
+                <p>margin-left:-100%</p>
+                <p>width:200px</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="innerBox">
+                <p>float:right</p>
+                <p>margin-left:-200px</p>
+                <p>width:200px</p>
+            </div>
+        </div>
+    </body>
+</html>
