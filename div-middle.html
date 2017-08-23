@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+        .centerBox,.centerBox2,.centerBox3 {
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+        .inlineBox {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #009378
+        }
+        .inlineBox2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); 
+            background: #1EE494;
+        }
+        .inlineBox3{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); 
+            background: #FC8A15
+        }
+        </style>
+    </head>
+    <body>
+        <div class="centerBox">
+            <div class="inlineBox"></div>
+        </div>
+        <div class="centerBox2">
+            <div class="inlineBox2"></div>
+        </div>
+        <div class="centerBox3">
+            <div class="inlineBox3">123</div>
+        </div>
+    </body>
+</html>

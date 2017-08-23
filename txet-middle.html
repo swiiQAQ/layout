@@ -1,0 +1,76 @@
+
+<html>
+<head>    
+<style>
+	.outBox{
+		width: 100px;
+		height: 100px;
+        margin: 0 auto;
+        background: #E3FDFD;
+		display:table;
+	}
+	.innerBox{
+		display: table-cell;
+		vertical-align: middle;
+        text-align: center;
+	}
+    .outBox2{
+        width: 100px;
+        height: 100px;
+        background: #CBF1F5;
+        position: relative;
+        margin: 20px auto;
+    }
+    .innerBox2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .outBox3{
+        width: 100px;
+        height: 100px;
+        background: #71C9CE;
+        margin: 20px auto;
+    }
+    .outBox3{
+        text-align: center;
+    }
+    .innerBox3{
+        vertical-align: middle;
+        display: inline-block;
+    }
+    /* .innerBox3 span:last-child{
+        float: left;
+    } */
+    .vis{
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+	<div class="outBox">
+		<div class="innerBox">
+			<p>middle</p>
+			<p>middle</p>
+		</div>
+    </div>
+    <div class="outBox2">
+        <div class="innerBox2">
+            <p>middle</p>
+            <p>middle</p>
+        </div>
+    </div>
+    <div class="outBox3">
+        <p class="innerBox3">
+            <span>middle</span>
+            <br/>
+            <span>middle</span>
+        </p>
+        <i class="vis"></i>
+    </div>
+</body>
+</html>
